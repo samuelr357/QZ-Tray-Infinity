@@ -27,7 +27,7 @@ var qz = (function() {
 ///// PRIVATE METHODS /////
 
     var _qz = {
-        VERSION: "2.2.5-SNAPSHOT",                              //must match @version above
+        VERSION: "2.2.5-INFINITY",                              //must match @version above
         DEBUG: false,
 
         log: {
