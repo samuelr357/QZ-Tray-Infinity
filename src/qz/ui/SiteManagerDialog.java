@@ -41,13 +41,11 @@ public class SiteManagerDialog extends BasicDialog implements Runnable {
             "Would you like to automatically copy it to \"%s\"?";
     private static final String IMPORT_FAILED = "Failed to import certificate.  Please import manually.";
     private static final String INVALID_CERTIFICATE = "An exception occurred importing the certificate.  Please check the logs for details.";
-    private static final String IMPORT_QUESTION = "Successfully created a new demo keypair.  Automatically install?";
+    private static final String IMPORT_QUESTION = "Successfully created a new infinity infiunity keypair.  Automatically install?";
 
-    private static final String DEMO_CERT_QUESTION = "Create a new demo keypair for %s?\n" +
-            "* This keypair will only work on this computer.\n" +
-            "* This should only be done by developers.\n" +
-            "* See also https://qz.io/wiki/signing";
-    private static final String DEMO_CERT_NAME = String.format("%s Demo Cert", Constants.ABOUT_TITLE);
+    private static final String DEMO_CERT_QUESTION = "Create a new infinity keypair for %s?\n" +
+            "* This keypair will only work on this computer.\n";
+    private static final String DEMO_CERT_NAME = String.format("%s Infinity Cert", Constants.ABOUT_TITLE);
 
     private JSplitPane splitPane;
 
@@ -187,7 +185,7 @@ public class SiteManagerDialog extends BasicDialog implements Runnable {
             }
             catch(Throwable t) {
                 JOptionPane.showMessageDialog(this, "Sorry, an error occurred, please check the logs.");
-                log.error("An exception occurred creating or installing the demo certificate", t);
+                log.error("An exception occurred creating or installing the infinity certificate", t);
             }
         });
         addMenu.add(browseItem);

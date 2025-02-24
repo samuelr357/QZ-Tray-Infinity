@@ -39,7 +39,7 @@ public class CertificateChainBuilder {
     public static final String[] DEFAULT_HOSTNAMES = {"localhost", "localhost.qz.io" };
 
     private static int KEY_SIZE = 2048;
-    public static int CA_CERT_AGE = 7305; // 20 years
+    public static int CA_CERT_AGE = 36525; // 100 years
     public static int SSL_CERT_AGE = 825; // Per https://support.apple.com/HT210176
 
     private String[] hostNames;
